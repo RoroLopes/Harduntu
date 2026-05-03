@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "harduntu"
+version = "0.1.0"
+description = "Interactive CLI tool for Linux system hardening based on CIS Benchmarks"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+dependencies = [
+    "rich>=13.0",       # Beautiful terminal output, tables, progress bars
+    "pyyaml>=6.0",      # Parse YAML profile files
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",      # Run tests with: pytest
+    "ruff>=0.4",        # Linter and formatter: ruff check . / ruff format .
+]
+
+# This creates the 'linuxguard' command that runs cli.main()
+[project.scripts]
+harduntu = "Harduntu.cli:main"
