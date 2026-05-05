@@ -50,6 +50,7 @@ Harduntu aims to:
 ## Goals
 
 * Provide a **simple CLI tool** for Ubuntu hardening
+* Currently involves with a simple **architecture design** who fail safe on root mode and non-root mode.
 * Align systems with **CIS security standards**
 * Enable **automation in security auditing**
 
@@ -57,11 +58,11 @@ Harduntu aims to:
 
 ## Future Improvements
 
-* Automated remediation engine
-* Rule-based modular system
-* Support for additional CIS benchmarks
-* Advanced reporting (JSON, HTML)
-
+* Automated remediation engine.
+* Rule-based modular system.
+* Support for additional CIS benchmarks.
+* Advanced reporting (JSON, HTML).
+* Change architecture design to communicate with inter-process communication (IPC) to ensure root mode and non-root mode separation for better security and stability.
 ---
 ## Author
 
